@@ -1,0 +1,21 @@
+{
+    "scenario": "Single successful user login",
+    "description": "A normal user logs in successfully from an internal IP.",
+    "events": [
+      {
+        "event_id": "evt-100",
+        "timestamp": "2026-01-09T10:00:00Z",
+        "action": "login_success",
+        "user": "alice",
+        "source_ip": "192.168.1.10",
+        "host": "workstation-01"
+      }
+    ],
+    "expected": {
+      "techniques": [],
+      "severity": "low",
+      "confidence": "high",
+      "should_alert": false
+    }
+  }
+  

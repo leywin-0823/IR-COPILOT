@@ -1,0 +1,17 @@
+{
+    "scenario": "Linux SSH brute force against root",
+    "description": "Multiple failed login attempts targeting the root account from a single IP.",
+    "events": [
+      { "event_id": "1", "action": "failed_login", "user": "root", "source_ip": "10.0.0.5" },
+      { "event_id": "2", "action": "failed_login", "user": "root", "source_ip": "10.0.0.5" },
+      { "event_id": "3", "action": "failed_login", "user": "root", "source_ip": "10.0.0.5" },
+      { "event_id": "4", "action": "failed_login", "user": "root", "source_ip": "10.0.0.5" }
+    ],
+    "expected": {
+      "techniques": ["T1110"],
+      "severity": "high",
+      "confidence": "high",
+      "should_alert": true
+    }
+  }
+  

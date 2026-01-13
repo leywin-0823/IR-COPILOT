@@ -1,0 +1,1 @@
+Sysmon EventID 1: Process Create Image: C:\Windows\System32\powershell.exe ParentImage: explorer.exe
